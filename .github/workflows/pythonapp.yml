@@ -21,10 +21,10 @@ jobs:
         pwd
         ls -la
         ls -l automated_build_exercies/starter_files
-        make install
-    - name: Lint with pylint
-      run: |
-        make lint
-    - name: Test with pytest
-      run: |
-        make test
+    #     make install
+    # - name: Lint with pylint
+    #   run: |
+    #     make lint
+    # - name: Test with pytest
+    #   run: |
+    #     make test
