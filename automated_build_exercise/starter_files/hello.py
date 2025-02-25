@@ -11,5 +11,15 @@ def hello(name, color):
         click.echo(f"Your color is {color}!")
         click.echo(click.style(f"Hello {name}!", fg=color))
 
+def toyou(x):
+    return "hi %s" % x
+
+
+def add(x):
+    return x + 1
+
+def subtract(x):
+    return x - 1
+
 if __name__ == "__main__":
     hello()
