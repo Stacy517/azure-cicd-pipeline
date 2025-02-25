@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./automated_build_exerices/starter_files
+        working-directory: ./automated_build_exercies/starter_files
 
     steps:
     - uses: actions/checkout@v2
@@ -18,6 +18,9 @@ jobs:
         python-version: 3.10.x
     - name: Install dependencies
       run: |
+        pwd
+        ls -la
+        ls -l automated_build_exercies/starter_files
         make install
     - name: Lint with pylint
       run: |
