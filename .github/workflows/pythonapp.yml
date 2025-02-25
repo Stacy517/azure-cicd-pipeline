@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./automated_build_exercies/starter_files
+        working-directory: ./automated_build_exercise/starter_files
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Set up Python 3.10
       uses: actions/setup-python@v4
       with:
